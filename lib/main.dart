@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/home.dart';
 
 void main() {
+  // run app is method
   runApp(MyApp());
 }
 
@@ -9,13 +11,6 @@ class MyApp extends StatelessWidget {
   // for changing the UI we will use this build.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Material(
-      child: Center(
-        child: Container(
-          child: Text('Done!!'),
-        ),
-      ),
-    ));
+    return MaterialApp(home: HomePage());
   }
 }
