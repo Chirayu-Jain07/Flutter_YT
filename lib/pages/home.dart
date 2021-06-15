@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
       // appbar is property of scaffold widget and in it we have
       appBar: AppBar(
         title: Text('Our Catalog'),
-      ),
+      ), 
       body: Center(
         child: Container(
           child: Text('Done!!'),
