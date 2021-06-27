@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/pages/home.dart';
 import 'package:flutter_catalog/pages/login_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   // run app is method
@@ -20,13 +21,18 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         // collection of colors
         primarySwatch: Colors.deepPurple,
+        fontFamily: GoogleFonts.lato().fontFamily,
+
+        // text theme apply only on primary theme
+        textTheme: GoogleFonts.latoTextTheme(),
       ),
+
       themeMode: ThemeMode.light,
       darkTheme: ThemeData.dark(),
       // to move from one page to another
       // basic or intial route is "/"
       // to change it we could do
-      initialRoute: "/home",
+      initialRoute: "/",
       routes: {
         "/": (context) => LoginPage(),
         "/home": (context) => HomePage(),
